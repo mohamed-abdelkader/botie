@@ -1,0 +1,143 @@
+.footer{
+  overflow: hidden;
+  padding-bottom: 30px;
+  .footer-left{
+    height: 500px;
+    width: 40%;
+    float: $float-l;
+    @media #{$maxMobile} {
+      width: 100%;
+      float: none;
+      height: 330px;
+    }
+    .footer-title{
+      font-size: 40px;
+      text-transform: capitalize;
+      padding: 30px 0;
+  }
+    }
+    .footer-disc{
+      font-size: 19px;
+      line-height: 1.5;
+      color: $grayColor;
+      margin-bottom: 30px;
+    }
+    .socila-title{
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: $socialColor;
+      letter-spacing: 2px;
+    }
+    .socila-media{
+      li{
+        display: inline-block;
+        text-align: center;
+        &:not(:first-of-type){
+          margin-left: 5px;
+        }
+        i{
+          font-size: 20px;
+          width: 34px;
+          height: 34px;
+          padding-top: 8px;
+          &.fa-facebook{
+            background-color: $fColor;
+            border-radius: 50%;
+            color: $colorWhite;
+          }
+          &.fa-twitter{
+            background-color: $tColor;
+            border-radius: 50%;
+            color: $colorWhite;
+          }
+          &.fa-dribbble{
+            background-color: $drColor;
+            border-radius: 50%;
+            color: $colorWhite;
+          }
+          &.fa-google-plus{
+            background-color: $redColor;
+            border-radius: 50%;
+            color: $colorWhite;
+          }
+        }
+      }
+    }
+  .footer-right{
+    width: 60%;
+    float: $float-l;
+    overflow: hidden;
+    padding: 50px 0 0 30px;
+    border-left: 1px solid $borderColor;
+    @media #{$maxMobile} {
+      width: 100%;
+      float: none;
+      border: none;
+      border-top: 1px solid $borderColor;
+    }
+    .info{
+      overflow: hidden;
+      margin-bottom: 30px;
+      h2{
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: $infoColor;
+      }
+      p{
+        color: $grayColor;
+        margin-bottom: 20px;
+      }
+      input{
+        width: 90%;
+        height: 50px;
+        padding-left: 15px;
+        outline: none;
+        border: none;
+        background-color: $inputColor;
+        float: $float-l;
+      }
+    }
+    .contcat-info{
+      padding-top: 30px;
+      padding-bottom: 100px;
+      border-top: 1px solid $borderColor;
+      overflow: hidden;
+      .contcat{
+        float: $float-l;
+        width: (100% / 3);
+        @media #{$maxMobile} {
+          width: 100%;
+          float: none;
+        }
+        h2{
+          text-transform: uppercase;
+          margin-bottom: 10px;
+          font-size: 20px;
+          @media #{$minSmall} {
+            font-size: 17px
+          }
+        }
+        ul{
+          li{
+            text-transform: uppercase;
+            color: $grayColor;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            &.contact-me{
+              font-weight: bold;
+              color: $socialColor;
+            }
+          }
+        }
+      }
+    }
+    .all-rights{
+      p{
+        color: $grayColor;
+      }
+    }
+  }
+}

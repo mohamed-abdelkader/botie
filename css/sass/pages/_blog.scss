@@ -1,0 +1,51 @@
+.blog-posts{
+  padding: 70px 0;
+  overflow: hidden;
+  .post{
+    width: (96% / 3);
+    float: $float-l;
+    border: 1px solid $borderColor;
+    padding-bottom: 40px;
+    margin-bottom: 2%;
+    position: relative;
+    @media #{$maxMobile} {
+      width: 100%;
+      float: none;
+    }
+    &.left{
+      margin-left: 2%;
+    }
+    .img{
+      img{
+        width: 100%;
+      }
+    }
+    .blog-info{
+      padding: 20px;
+      .post-title{
+        font-size: 1.2em;
+        text-transform: capitalize;
+        word-spacing: 1px;
+        letter-spacing: 2px;
+        color: $blogTitle;
+        margin-bottom: 10px;
+      }
+      .post-disc{
+        color: $grayColor1;
+        word-spacing: 2px;
+        line-height: 2;
+        margin-bottom: 30px;
+      }
+      .price{
+        span{
+          display: inline-block;
+          float: $float-l;
+          font-weight: bold;
+          color: $grayColor1;
+          font-size: 20px;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}

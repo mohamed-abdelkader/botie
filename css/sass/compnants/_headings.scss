@@ -1,0 +1,12 @@
+.heading{
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: $headingsColor;
+    margin-bottom: 1em;
+    @media #{$maxMobile} {
+      font-size: 28px;
+    }
+  }
+}

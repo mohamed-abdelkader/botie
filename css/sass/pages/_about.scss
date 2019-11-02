@@ -1,0 +1,174 @@
+.welcome{
+  text-align: center;
+  padding: 100px 0;
+  background-color: #f7f7f7;
+  .title{
+    p{
+      text-transform: uppercase;
+      color: $grayColor;
+      font-weight: bold;
+      font-size: 13px;
+      letter-spacing: 2px;
+    }
+  }
+  .welcome-disc{
+    width: 80%;
+    margin: auto;
+    @media #{$maxMobile} {
+      width: 100%;
+    }
+    p{
+      color: $grayColor1;
+      line-height: 2;
+    }
+  }
+}
+
+/*start offer*/
+.offers{
+  padding: 50px 0;
+  overflow: hidden;
+  .offer{
+    width: (96% / 3);
+    float: $float-l;
+    padding: 50px 30px;
+    box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, .1);
+    @media #{$maxMobile} {
+      width: 46%;
+    }
+    &.res{
+      @media #{$maxMobile} {
+        margin-left: 4%;
+      }
+    }
+    @media #{$minSmall} {
+      &.left{
+        margin-left: 2%;
+      }
+    }
+    &.midule{
+      background-color: $redColor;
+      color: $colorWhite;
+    }
+    i{
+      font-size: 30px;
+      color: $redColor;
+      margin-bottom: 30px;
+      &.fa-bullhorn{
+        color: $colorWhite;
+      }
+    }
+    h3{
+      text-transform: uppercase;
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    p{
+      line-height: 1.5;
+      color: $grayColor1;
+      line-height: 1.5;
+      width: 80%;
+      font-size: 16px;
+      &.midule{
+        color: $colorWhite;
+      }
+    }
+  }
+}
+/*End offer*/
+
+/*Start sale*/
+.sale{
+  background-color: $f7;
+  padding: 50px 0;
+  overflow: hidden;
+  .img{
+    width: (100% / 2);
+    float: $float-l;
+    padding: 30px;
+    @media #{$maxMobile} {
+      width: 100%;
+      float: none;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .sale-info{
+    width: (100% / 2);
+    float: $float-l;
+    padding: 40px;
+    @media #{$maxMobile} {
+      width: 100%;
+      float: none;
+    }
+    .top{
+      text-transform: uppercase;
+      color: $grayColor1;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .heading{
+      h2{
+        text-align: $float-l;
+      }
+    }
+    .sale-disc{
+      color: $grayColor1;
+      line-height: 2;
+      margin-bottom: 20px;
+    }
+    .sale-icon{
+      color: $grayColor;
+      line-height: 2;
+      i{
+        margin-right: 20px;
+        color: $redColor;
+      }
+    }
+  }
+}
+/*End sale*/
+/*Start services*/
+.services{
+  padding: 70px 0;
+  overflow: hidden;
+  .my-services{
+    width: (100% / 2);
+    float: $float-l;
+    padding: 0 26px;
+    @media #{$maxMobile} {
+      width: 100%;
+      float: none;
+    }
+    .icon{
+      width: 7%;
+      float: $float-l;
+      padding-top: 22px;
+      i{
+        font-size: 25px;
+        color: $iconColor;
+      }
+    }
+    .service-content{
+      float: $float-l;
+      width: calc(100% - 7%);
+      padding-left: 20px;
+      margin-bottom: 50px;
+      h4{
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+      }
+      p{
+        color: $grayColor1;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+/*End services*/

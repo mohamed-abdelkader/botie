@@ -1,0 +1,271 @@
+
+/*Start information*/
+.casual{
+  width: 33%;
+  position: absolute;
+  top: 250px;
+  @media #{$maxMobile} {
+    position: absolute;
+    top: 150px;
+    width: 50%;
+  }
+  p:first-of-type{
+    color: $colorWhite;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  p:last-of-type{
+    color: $colorWhite;
+    font-size: 54px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+}
+.information{
+  padding: 50px 0 100px 0;
+  overflow: hidden;
+  .info{
+    width: (94%/ 4);
+    float: $float-l;
+    overflow: hidden;
+    padding: 45px 14px;
+    box-shadow: 7px 7px 10px 0 rgba(76, 110, 245, .1);
+    @media #{$maxMobile} {
+        width: 46%;
+    }
+    &.rsp{
+      @media #{$maxMobile} {
+        margin-left: 4%;
+      }
+    }
+    @media #{$minSmall} {
+      &:not(:first-of-type) {
+        margin-left: 2%;
+      }
+    }
+    &.active{
+      background-color: $redColor;
+      color: $colorWhite;
+    }
+    .icon{
+      width: 20%;
+      height: 50px;
+      float: $float-l;
+      i{
+      margin-top: 9px;
+      font-size: 30px;
+      color: $redColor;
+      @media #{$maxMobile} {
+
+      }
+      &.fa-bullhorn{
+        color: $colorWhite;
+      }
+      }
+    }
+    .icon-disc{
+      float: $float-l;
+      width: calc(100% - 20%);
+      padding-left: 15px;
+      span{
+        display: inline-block;
+        color: $blckColor;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      p{
+        color: $grayColor;
+        line-height: 1.4;
+        &.active{
+          color: $colorWhite;
+        }
+      }
+    }
+  }
+}
+/*End information*/
+/*Start new arrivals*/
+.new-arrivals{
+  overflow: hidden;
+  margin-bottom: 50px;
+  .products{
+    padding: 10px;
+    width: (96% / 3);
+    float: $float-l;
+    text-align: center;
+    border: 1px solid $borderColor;
+    margin-bottom: 2%;
+    @media #{$maxMobile} {
+      width: 46%;
+    }
+    &.res{
+      @media #{$maxMobile} {
+        margin-left: 4%;
+      }
+    }
+    @media #{$minSmall} {
+      &.left{
+        margin-left: 2%;
+      }
+    }
+    .img-product{
+      img{
+        width: 100%;
+      }
+      span{
+        display: block;
+        width: 60px;
+        margin: auto;
+        background-color:#414b50;
+        padding: 3px 0px;
+        text-transform: capitalize;
+        color: $colorWhite;
+      }
+    }
+    .price-name{
+      border-bottom: 1px solid $borderColor;
+      h4{
+        margin: 15px 0;
+        a{
+          text-transform: uppercase;
+          color: $blckColor;
+          word-spacing: 6px;
+          font-size: 15px;
+        }
+      }
+    }
+    .price-info{
+      margin-top: 13px;
+      margin-bottom: 13px;
+      span{
+        display: block;
+        color: $redColor;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: bold
+      }
+    }
+    .stars{
+      li{
+        display: inline-block;
+        margin-left: 2px;
+        i{
+          color: $grayColor;
+          font-size: 12px;
+          margin-bottom: 3px;
+        }
+      }
+    }
+  }
+}
+/*End new arrivals*/
+/*Start quot*/
+.quot{
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 100px 0;
+  background-color: $colorWhite2;
+  h3{
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  .stars{
+    li{
+      display: inline-block;
+      margin-left: 2px;
+      i{
+        color: $redColor;
+        font-size: 14px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+  .text-quote{
+    width: 56%;
+    margin: auto;
+    line-height: 2;
+    @media #{$maxMobile} {
+      width: 100%;
+    }
+    p{
+      color: $grayColor;
+      i{
+        color: $quotColor;
+        font-size: 30px;
+      }
+    }
+  }
+}
+/*End quot*/
+/*populer-products*/
+
+.populer-products{
+  overflow: hidden;
+  margin-bottom: 70px;
+  .img-left{
+    padding: 10px;
+    width: 48%;
+    float: $float-l;
+    margin-right: 2%;
+    border: 1px solid $borderColor;
+    position: relative;
+    @media #{$maxMobile} {
+      width: 100%;
+      float: none;
+      margin-bottom: 2%;
+    }
+      img{
+        width: 100%;
+      }
+      a{
+        position: absolute;
+        bottom: 90px;
+        right: 30px;
+        color: $blckColor;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+  }
+  .img-right{
+    width: 50%;
+    float: $float-l;
+    @media #{$maxMobile} {
+      width: 100%;
+      float: none;
+    }
+    .img-right-1{
+      padding: 10px;
+      border: 1px solid $borderColor;
+      &.top{
+        margin-bottom: 2%;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+/*End populer-products*/
+
+/*Start icons*/
+.icons{
+  background-color: $blueColor3;
+  padding: 50px 0;
+  overflow: hidden;
+    i{
+      float: $float-l;
+      width:(100% / 6);
+      text-align: center;
+      color: $colorIcon;
+      font-size: 2.5em;
+  }
+}
+/*End icons*/
